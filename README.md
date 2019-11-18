@@ -1,6 +1,6 @@
 # React Google Books Search
 
-### Overview
+## Overview
 
 React-based Google Books Search app. This SPA (Single Page Application) uses [`react-router-dom`]to navigate, hide and show your React components without changing the route within Express. Using helper/util functions and React lifecycle methods to query and display books based on user searches, this is a full MERN stack application allows users to save books to a database to refer to at a later date. Built with Node, Express and MongoDB, and React-Toastify for custom alerts. Toasty!
 
@@ -38,8 +38,7 @@ React-based Google Books Search app. This SPA (Single Page Application) uses [`r
     }
     ```
 
-
-### Technologies Implemented
+## Technologies Implemented
 
 * Bootstrap
 * Express
@@ -50,6 +49,4 @@ React-based Google Books Search app. This SPA (Single Page Application) uses [`r
 
 ### Live site
 
-* deployed: https://lil-google-books-search.herokuapp.com/
-
-
+* deployed: <https://googlesearching.herokuapp.com/>

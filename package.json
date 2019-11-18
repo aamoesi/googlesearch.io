@@ -1,33 +1,44 @@
 {
-  "name": "googlesearch",
+  "name": "mern",
   "version": "1.0.0",
-  "description": "NYT Google Books Search",
-  "main": "index.js",
+  "description": "react based google book search",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+    "start:prod": "node server.js",
+    "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
+    "client": "cd client && npm run start",
+    "seed": "node scripts/seedDB.js",
+    "install": "cd client && npm install",
+    "build": "cd client && npm run build",
+    "heroku-postbuild": "npm run build"
+  },
+  "author": "Lily Simmons",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^4.1.0",
+    "nodemon": "^1.18.7"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "classnames": "^2.2.6",
+    "cors": "^2.8.5",
+    "dotenv": "^7.0.0",
+    "express": "^4.16.3",
+    "if-env": "^1.0.4",
+    "mongoose": "^5.3.16",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-router-dom": "^5.0.0",
+    "react-scripts": "^2.1.8",
+    "react-toastify": "^5.0.1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/aamoesi/googlesearch.io.git"
+    "url": "git+https://github.com/lilysimmons/google-books-search"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/aamoesi/googlesearch.io/issues"
+    "url": "https://github.com/lilysimmons/google-books-search/issues"
   },
-  "homepage": "https://github.com/aamoesi/googlesearch.io#readme",
-  "dependencies": {
-    "axios": "^0.18.1",
-    "create-react-app": "^2.1.8",
-    "express": "^4.17.1",
-    "init": "^0.1.2",
-    "mongodb": "^3.3.4",
-    "mongoose": "^5.7.11",
-    "path": "^0.12.7",
-    "react": "^16.12.0",
-    "react-router-dom": "^5.1.2"
-  },
-  "devDependencies": {}
+  "homepage": "https://github.com/lilysimmons/google-books-search#readme"
 }

@@ -1,5 +1,5 @@
 {
-  "name": "mern",
+  "name": "googlesearch",
   "version": "1.0.0",
   "description": "react based google book search",
   "main": "server.js",
@@ -25,6 +25,7 @@
     "cors": "^2.8.5",
     "dotenv": "^7.0.0",
     "express": "^4.16.3",
+    "gh-pages": "^2.1.1",
     "if-env": "^1.0.4",
     "mongoose": "^5.3.16",
     "react": "^16.8.6",
@@ -35,10 +36,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lilysimmons/google-books-search"
+    "url": "git+https://github.com/aamoesi/googlesearch.io"
   },
   "bugs": {
-    "url": "https://github.com/lilysimmons/google-books-search/issues"
+    "url": "https://github.com/aamoesi/googlesearch.io/issues"
   },
-  "homepage": "https://github.com/lilysimmons/google-books-search#readme"
+  "homepage": "https://github.com/aamoesi/googlesearch.io#readme"
 }
